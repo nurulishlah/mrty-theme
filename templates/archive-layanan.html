@@ -1,0 +1,72 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:60px;padding-bottom:60px">
+
+    <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+    <div class="wp-block-group alignwide">
+        <!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"42px","fontWeight":"700"}}} -->
+        <h1 class="wp-block-heading" style="font-size:42px;font-weight:700">Services</h1>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"},"spacing":{"margin":{"top":"10px","bottom":"40px"}}}} -->
+        <p style="margin-top:10px;margin-bottom:40px;font-size:18px">Explore the various services and facilities
+            provided by our mosque.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:query {"query":{"perPage":9,"pages":0,"offset":0,"postType":"layanan","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"flex","columns":3}} -->
+        <div class="wp-block-query">
+            <!-- wp:post-template -->
+            <!-- wp:group {"style":{"border":{"radius":"12px","width":"1px"},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"borderColor":"contrast","backgroundColor":"base","className":"layanan-card","layout":{"type":"default"}} -->
+            <div class="wp-block-group layanan-card has-border-color has-contrast-border-color has-base-background-color has-background"
+                style="border-width:1px;border-radius:12px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                <!-- wp:post-featured-image {"isLink":true,"style":{"border":{"radius":{"top":"12px","right":"12px"}}}} /-->
+
+                <!-- wp:group {"style":{"spacing":{"padding":{"top":"20px","right":"20px","bottom":"20px","left":"20px"}}},"layout":{"type":"default"}} -->
+                <div class="wp-block-group"
+                    style="padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+                    <!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontSize":"20px","fontWeight":"600"},"spacing":{"margin":{"bottom":"10px"}}}} /-->
+
+                    <!-- wp:post-excerpt {"moreText":"","excerptLength":20,"style":{"spacing":{"margin":{"bottom":"15px"}}}} /-->
+
+                    <!-- wp:group {"style":{"spacing":{"padding":{"top":"15px","bottom":"15px","left":"15px","right":"15px"}},"border":{"radius":"8px"}},"backgroundColor":"light-bg","layout":{"type":"default"}} -->
+                    <div class="wp-block-group has-light-bg-background-color has-background"
+                        style="border-radius:8px;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px">
+                        <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"spacing":{"margin":{"bottom":"5px"}}}} -->
+                        <p style="margin-bottom:5px;font-size:14px"><strong>Contact:</strong> [mrty_meta key="_hubungi"]
+                        </p>
+                        <!-- /wp:paragraph -->
+
+                        <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"}}} -->
+                        <p style="font-size:14px"><strong>Phone:</strong> [mrty_meta key="_informasi"]</p>
+                        <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
+
+                    <!-- wp:post-date {"format":"F j, Y","style":{"typography":{"fontSize":"13px"},"spacing":{"margin":{"top":"15px"}}},"textColor":"contrast"} /-->
+                </div>
+                <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+            <!-- /wp:post-template -->
+
+            <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+            <!-- wp:query-pagination-previous /-->
+            <!-- wp:query-pagination-numbers /-->
+            <!-- wp:query-pagination-next /-->
+            <!-- /wp:query-pagination -->
+
+            <!-- wp:query-no-results -->
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">No services found.</p>
+            <!-- /wp:paragraph -->
+            <!-- /wp:query-no-results -->
+        </div>
+        <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
