@@ -1,0 +1,58 @@
+{
+    "version": 2,
+    "settings": {
+        "appearanceTools": true,
+        "layout": {
+            "contentSize": "840px",
+            "wideSize": "1200px"
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "primary",
+                    "color": "#009988",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "#dbe3df",
+                    "name": "Secondary"
+                },
+                {
+                    "slug": "accent",
+                    "color": "#ff6666",
+                    "name": "Accent"
+                },
+                {
+                    "slug": "base",
+                    "color": "#ffffff",
+                    "name": "Base"
+                },
+                {
+                    "slug": "contrast",
+                    "color": "#333333",
+                    "name": "Contrast"
+                }
+            ],
+            "defaultPalette": false
+        }
+    },
+    "styles": {
+        "typography": {
+            "fontFamily": "system-ui, -apple-system, sans-serif"
+        },
+        "blocks": {
+            "core/body": {
+                "color": {
+                    "text": "var(--wp--preset--color--contrast)",
+                    "background": "var(--wp--preset--color--secondary)"
+                }
+            },
+            "core/post-title": {
+                "typography": {
+                    "fontWeight": "700"
+                }
+            }
+        }
+    }
+}
